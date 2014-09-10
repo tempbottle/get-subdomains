@@ -84,7 +84,7 @@ def get_all_domain():
 	url = "http://10.13.8.90/api/get_domain/"
 	response = requests.get(url, params=payload)
 	domains = json.loads(response.text).get('data', [])
-	return domains[:2]
+	return domains
 
 
 #-------------------------------------------------------------------------
